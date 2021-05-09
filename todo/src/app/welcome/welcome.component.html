@@ -1,0 +1,18 @@
+<div class ="container">
+<h1>Welocme to our Angular App {{name}} .</h1>
+<br>
+You can manage your todos here.... <a routerLink="/todos">here</a>
+
+</div>
+
+
+<div class = "container">
+        Click me to connect Rest Services
+<button (click)="getWelcomeMsg()" cls= "btn btn-success" > Get Welcome Msg</button>
+</div>
+
+
+<div class ='container'  *ngIf ='welcomeMessage'>
+<H2> Your customized welcome message</H2>
+    {{welcomeMessage}}
+</div>
